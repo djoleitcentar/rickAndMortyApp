@@ -1,0 +1,23 @@
+.characters {
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.characters::-webkit-scrollbar {
+  width: 8px;
+}
+
+.characters::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 88%);
+}
+
+.characters::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+.characters::-webkit-scrollbar-button {
+  display: none;
+}

@@ -1,0 +1,8 @@
+<div class="app-container">
+    <div class="input-container">
+        <ng-icon name="bootstrapSearch" class="input-icon"></ng-icon>
+        <input class="input" placeholder="Search character ..." [(ngModel)]="name" (ngModelChange)="queryName()"/>
+    </div>
+    <h1 class="heading heading-margin">Characters</h1>
+    <app-characters [data]="data"></app-characters>
+</div>

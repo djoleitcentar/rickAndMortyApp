@@ -1,0 +1,7 @@
+.app {
+  width: 29rem;
+  height: 34rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-white);
+}

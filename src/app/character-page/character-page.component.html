@@ -1,0 +1,39 @@
+<section class="character-page">
+    <div class="character-page-header">
+      <div>
+        <a routerLink="" class="back-link">
+          <ng-icon name="bootstrapArrowLeft"></ng-icon>BACK
+        </a>
+      </div>
+      <div class="character-page-header-info">
+        <div class="avatar-div">
+          <img
+            class="avatar-character-page avatar-position"
+            [src]="character.image"
+            alt='avatar'
+          />
+          <div class="avatar-container"></div>
+        </div>
+        <h1 class="character-name-white">{{ character.name }}</h1>
+      </div>
+    </div>
+    <div class="character-page-details">
+      <h2 class="heading">Character info</h2>
+      <div class="character-info-grid">
+          <div *ngFor="let info of infoSections; let i = index">
+            <h2 class="character-info-sections">{{ info }}</h2>
+            <p class="character-info-paragraph">
+              {{ infoParagraphs[i] }}
+            </p>
+          </div>
+      </div>
+    </div>
+    <h2 class="heading heading-margin">Episodes</h2>
+    <div class="character-episodes">
+      <div class="episodes" *ngFor="let episode of character.episode">
+        <p class="character-info-sections">
+          {{ episode }}
+        </p>
+      </div>
+    </div>
+  </section>

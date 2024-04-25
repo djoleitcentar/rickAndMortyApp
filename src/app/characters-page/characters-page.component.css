@@ -1,0 +1,41 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.heading {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--color-text-black);
+}
+
+.heading-margin {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.input {
+  width: 100%;
+  height: 3rem;
+  margin: 0 3rem;
+  padding: 0 3rem;
+  font-size: 0.8em;
+  color: var(--color-text-grey);
+  border: none;
+  background-color: var(--color-bg);
+  outline: none;
+}
+
+.input-container {
+  width: 29rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  margin: 4.2rem;
+  color: var(--color-text-grey);
+}

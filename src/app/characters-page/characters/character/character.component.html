@@ -1,0 +1,22 @@
+<a [routerLink]="[data[index].id]" class="character-link">
+<div
+  class="character"
+  >
+  <div>
+    <img class="avatar" [src]='data[index].image' [alt]='data[index].name' />
+  </div>
+  <div class="character-details">
+    <div>
+          <h1 class="character-name">{{ data[index].name }}</h1>
+        </div>
+        <div class="character-info">
+          <div *ngFor="let info of infoSections; let i = index">
+            <h2 class="character-info-sections">{{ info }}</h2>
+            <p class="character-info-paragraph">
+              {{ infoParagraphs[i] }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>

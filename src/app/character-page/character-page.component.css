@@ -1,0 +1,109 @@
+.avatar-character-page {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.avatar-position {
+  position: absolute;
+}
+
+.avatar-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-container {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+
+.character-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-page-header {
+  width: 29rem;
+  height: 6rem;
+  background-color: var(--color-primary);
+}
+
+.character-page-header-info {
+  margin: 1.2rem 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.character-page-details {
+  margin-top: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.character-info-sections {
+  font-size: 0.7em;
+  font-weight: 200;
+  color: var(--color-text-grey);
+}
+
+.character-info-grid {
+  width: 80%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.character-info-paragraph {
+  margin-top: 0.1rem;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: var(--color-text-black);
+}
+
+.character-name-white {
+  font-size: 1.3em;
+  color: var(--color-white);
+}
+
+.character-episodes {
+  height: 6rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.episodes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.back-link {
+  width: 4rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.9em;
+  color: var(--color-white);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--color-text-black);
+}
+
+.heading-margin {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
