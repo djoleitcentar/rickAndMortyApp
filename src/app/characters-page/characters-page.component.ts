@@ -7,19 +7,22 @@ import { CharactersServiceTsService } from '../characters.service';
   styleUrl: './characters-page.component.css'
 })
 export class CharactersPageComponent implements OnInit {
-  character: { info?: {}, results?: {}[]};
+  character: { info?: { count: number }, results?: {}[]};
   data: {}[];
   name: string;
+  totalCharacters: number;
+  page = 1;
 
   constructor(private charactersService: CharactersServiceTsService) {}
 
   ngOnInit(): void {
-    this.charactersService.getCharacters().subscribe((character) => {
+    this.charactersService.getCharacters(this.page).subscribe((character) => {
       this.character = character;
       this.data = this.character.results
+      this.totalCharacters = this.character.info.count
     })
   }
-
+  
   queryName() {
     this.charactersService.getCharacterByName(this.name).subscribe((character) => {
       this.character = character;

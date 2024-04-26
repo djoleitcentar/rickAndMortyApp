@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -16,15 +16,15 @@ export class CharactersServiceTsService implements OnInit {
   }
 
 
-  getCharacters(): Observable<{}> {
-    return this.http.get(`${this.baseUrl}`)
+  getCharacters(page: number): Observable<{}> {
+    return this.http.get(`${this.baseUrl}/?page=${page}`)
   }
 
-  getCharacter(id): Observable<{}> {
+  getCharacter(id: number): Observable<{}> {
     return this.http.get(`${this.baseUrl}/${id}`)
   }
 
-  getCharacterByName(name): Observable<{}> {
+  getCharacterByName(name: string): Observable<{}> {
     return this.http.get(`${this.baseUrl}?name=${name}`)
   }
 }

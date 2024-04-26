@@ -1,3 +1,10 @@
-<div class="characters">
+<div
+    class="characters"
+    infiniteScroll
+    [infiniteScrollDistance]="1"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()"
+    [scrollWindow]="false"
+>
     <app-character *ngFor="let result of data; let i = index" [data]="data" [index]="i"></app-character>
 </div>

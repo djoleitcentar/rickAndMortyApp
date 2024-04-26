@@ -11,6 +11,7 @@ import { CharactersComponent } from './characters-page/characters/characters.com
 import { CharacterComponent } from './characters-page/characters/character/character.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NgIconsModule.withIcons({ bootstrapSearch, bootstrapArrowLeft }),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

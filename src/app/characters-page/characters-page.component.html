@@ -4,5 +4,5 @@
         <input class="input" placeholder="Search character ..." [(ngModel)]="name" (ngModelChange)="queryName()"/>
     </div>
     <h1 class="heading heading-margin">Characters</h1>
-    <app-characters [data]="data"></app-characters>
+    <app-characters [data]="data" [character]="character" [totalCharacters]="totalCharacters" [page]="page"></app-characters>
 </div>
